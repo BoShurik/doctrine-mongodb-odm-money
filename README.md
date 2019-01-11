@@ -15,7 +15,7 @@ Type::registerType('currency', \BoShurik\Money\Doctrine\ODM\MongoDB\Types\Curren
 
 ### Symfony integration
 
-- Add CurrencyType (i.e. in `Kernel`)
+- Add CurrencyType (e.g. in `Kernel.php`)
 ```php
 
 use BoShurik\Money\Doctrine\ODM\MongoDB\Types\CurrencyType;
@@ -33,7 +33,7 @@ class Kernel extends BaseKernel
 }
 ```
 
-- Add mapping to `doctrine_mongodb.yaml`
+- Add mapping to `config/packages/doctrine_mongodb.yaml`
 ```yaml
 doctrine_mongodb:
     document_managers:
