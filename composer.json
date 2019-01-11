@@ -1,0 +1,21 @@
+{
+    "name": "boshurik/doctrine-mongodb-odm-money",
+    "description": "Doctrine ODM Money Type integration",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BoShurik",
+            "email": "boshurik@gmail.com"
+        }
+    ],
+    "require": {
+        "moneyphp/money": "^3.0",
+        "doctrine/mongodb-odm": "^1.2|^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BoShurik\\Money\\Doctrine\\ODM\\MongoDB\\Types\\": "src/"
+        }
+    }
+}
