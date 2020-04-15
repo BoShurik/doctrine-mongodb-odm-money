@@ -50,17 +50,15 @@ class CurrencyType extends Type
             return $value;
         }
 
-        $currency = static::getCurrencyValue($value);
-
-        return $currency;
+        return static::getCurrencyValue($value);
     }
 
-    public function closureToMongo()
+    public function closureToMongo(): string
     {
         return 'if ($value === null) { $return = null; } else { $return = $value->getCode(); }';
     }
 
-    public function closureToPHP()
+    public function closureToPHP(): string
     {
         return 'if ($value === null) { $return = null; } else { $return = \\'.get_class($this).'::getCurrencyValue($value);  }';
     }

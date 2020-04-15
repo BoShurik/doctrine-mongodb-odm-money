@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": "^7.0",
         "moneyphp/money": "^3.0",
         "doctrine/mongodb-odm": "^2.0"
     },
